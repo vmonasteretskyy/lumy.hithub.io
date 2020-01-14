@@ -328,7 +328,7 @@ footer li svg { margin-right: 20px; }
 
 .copy_logo a { margin-top: 80px; }
 
-.workflow_block { background-image: url("../../images/dots.png"); background-repeat: no-repeat; display: -webkit-flex; display: -ms-flexbox; display: flex; background-size: 100%; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 380px; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding: 0px 70px 0 75px; background-position: right top; }
+.workflow_block { background-image: url("../images/dots.png"); background-repeat: no-repeat; display: -webkit-flex; display: -ms-flexbox; display: flex; background-size: 100%; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 380px; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding: 0px 70px 0 75px; background-position: right top; }
 
 .workflow_block div { text-align: center; }
 
