@@ -118,12 +118,15 @@ section {
   display: block;
   z-index: 2;
   height: 9.3vh;
+  width: 7px;
+  transform: translate(-50%, 0);
 }
 .line_down {
   background-color: #fbfbfb;
   width: 1px;
   animation: pulsate 2.5s infinite linear;
   height: 2px;
+  margin: 0 auto;
 }
 
 @keyframes pulsate {
@@ -149,10 +152,12 @@ header {
   z-index: 90;
   background-color: #1b1b1b;
   color: #fdfdfd;
+  transition: all 0.3s;
   .container {
     height: 100%;
   }
 }
+
 .menu {
   color: #fbfbfb;
   height: 100%;
@@ -758,4 +763,7 @@ footer {
 
 .third_view_bg {
   width: 30vw;
+}
+#container {
+  background-color: #1b1b1b;
 }

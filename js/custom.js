@@ -17,6 +17,34 @@ $(document).ready(function() {
   $(".close_btn").click(function() {
     $("header ul ").slideUp(500);
   });
+  $(".line_down_a").on("click", function(event) {
+    event.preventDefault();
+
+    var id = $(this).attr("href"),
+      top = $(id).offset().top - 90;
+
+    $("body,html").animate({ scrollTop: top }, 1000);
+  });
+  var scrolled;
+  window.onscroll = function() {
+    scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    var windowHeight = $(window).height();
+    var secondView = $("#second_view").outerHeight();
+    console.log("windowHeight", windowHeight);
+    console.log("secondView", secondView);
+    windowHeight = windowHeight + secondView - 90;
+
+    if (scrolled > windowHeight) {
+      $("header").css({ background: "#fdfdfd" });
+      $(".menu a").css({ color: "#1b1b1b" });
+      $(".path_2 ").css({ fill: "#1b1b1b" });
+    }
+    if (windowHeight > scrolled) {
+      $("header").css({ background: "#1b1b1b" });
+      $(".menu a").css({ color: "#fdfdfd" });
+      $(".path_2 ").css({ fill: "#fdfdfd" });
+    }
+  };
 });
 
 // SWIPEr
