@@ -35,9 +35,27 @@
               <li><a href="">Portfolio</a></li>
               <li><a href="">Blog</a></li>
               <li><a href="">Contacts</a></li>
+              <a
+                href=""
+                class="main_btn"
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                <span>
+                  Get In Touch
+                </span>
+                <img src="./images/Arrow.svg" alt="" />
+              </a>
             </ul>
           </nav>
-          <a href="" class="main_btn">
+          <a  class="main_btn"   href=""
+          
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter">
             <span>
               Get In Touch
             </span>
@@ -46,6 +64,69 @@
         </div>
       </div>
     </header>
+    <div
+    class="modal fade contact_modal"
+    id="exampleModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <img src="./images/closeiconb.svg" alt="" />
+        </button>
+
+        <div class="modal-body">
+          <h3>
+            Get in Touch
+          </h3>
+          <form action="" class="contacts_form">
+            <input placeholder="Name" type="text" />
+            <input placeholder="Email (Required)" type="email" required />
+            <textarea name="" id="" placeholder="Message"></textarea>
+            <div class="file_upload_wrap">
+              <label for="file_choose" class="file_upload">
+                <img src="./images/sc.svg" alt="" />
+                <span>
+                  Attach file
+                </span>
+              </label>
+              <div
+                class="fileupload fileupload-new"
+                data-provides="fileupload"
+              >
+                <!-- <label for="file_choose"></label> -->
+                <span class="btn btn-primary btn-file">
+                  <input id="file_choose" type="file"
+                /></span>
+                <span class="fileupload-preview"></span>
+                <a
+                  href="#"
+                  class="close fileupload-exists"
+                  data-dismiss="fileupload"
+                  style="float: none"
+                ></a>
+              </div>
+            </div>
+            <button type="submit" class="main_btn">
+              <span>
+                Send
+              </span>
+
+              <img src="./images/Arrow.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <main class="home">
       <section id="first_view" class="first_view">
         <div class="first_view_text_wrap">
@@ -57,7 +138,11 @@
             <span class="first_view_text_sm">
               We`ll make it work
             </span>
-            <a href="" class="main_btn">
+            <a href="" class="main_btn"  
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModalCenter" >
               <span>
                 Get In Touch
               </span>
@@ -473,7 +558,9 @@
           <div class="row">
             <div class="col-xl-4 col-lg-5">
               <div class="img_wrap">
-                <img src="./images/64988.png" alt="" />
+                <a href="">
+                    <img src="./images/64988.png" alt="" />
+                </a>
               </div>
             </div>
             <div class="col-xl-8 col-lg-7">

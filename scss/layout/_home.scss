@@ -6,15 +6,18 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 140%;
-  color: rgba(27, 27, 27, 0.8);
+  color: #1b1b1b;
 }
 a:hover {
   cursor: pointer;
 }
 button {
   cursor: pointer;
+  outline: none !important;
 }
-
+textarea {
+  resize: none;
+}
 .cond {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -26,6 +29,10 @@ button {
 .just_btwn {
   justify-content: space-between;
   display: flex;
+}
+.align_center {
+  display: flex;
+  align-items: center;
 }
 section {
   border-top: 0.4px solid rgba(27, 27, 27, 0.3);
@@ -758,7 +765,7 @@ footer {
   }
 }
 .workflow {
-  padding-bottom: 150px;
+  padding-bottom: 250px;
 }
 
 .third_view_bg {
@@ -766,4 +773,10 @@ footer {
 }
 #container {
   background-color: #1b1b1b;
+}
+.section_title {
+  text-transform: uppercase;
+}
+.menu ul {
+  margin-right: -70px;
 }
