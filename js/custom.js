@@ -259,3 +259,7 @@ $(window).resize(function() {
       }
     );
 })(window.jQuery);
+
+var slide = $(".slider_sm .slider_main_img").outerHeight();
+var block = slide + slide + 21;
+$(".slider_sm").css("height", block);

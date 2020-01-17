@@ -146,6 +146,7 @@ nav .pagination {
 }
 .slider_sm {
   width: 36%;
+  overflow: hidden;
 }
 .slider_main_img {
   max-height: 551px;
@@ -155,11 +156,14 @@ nav .pagination {
   }
 }
 .sm-slide {
+  margin-bottom: 21px;
   .slider_main_img {
     max-height: 270px;
-    margin-top: 23px;
+
+    // margin-top: 23px;
   }
 }
+
 .blog_open_text {
   font-size: 18px;
   line-height: 160%;
@@ -263,8 +267,11 @@ nav .pagination {
   }
 }
 .slider_sm {
-  margin-top: -24px;
+  // margin-top: -7px;
   height: 100%;
+}
+.slider_sm .slick-list {
+  // margin-top: -15px;
 }
 // 404 page
 .not_found {
@@ -409,5 +416,16 @@ nav .pagination {
 h3:hover {
   a {
     color: #02d2b6;
+  }
+}
+.filters {
+  a:hover {
+    color: #02d2b6;
+  }
+}
+
+.btn_pag:hover {
+  .page-link {
+    background-color: transparent;
   }
 }
