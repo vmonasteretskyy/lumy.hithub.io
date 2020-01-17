@@ -56,7 +56,6 @@
               <a
                 href=""
                 class="main_btn"
-                type="button"
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
@@ -71,7 +70,6 @@
           <a
             href=""
             class="main_btn"
-            type="button"
             class="btn btn-primary"
             data-toggle="modal"
             data-target="#exampleModalCenter"
@@ -84,6 +82,70 @@
         </div>
       </div>
     </header>
+    <!-- Modal -->
+    <div
+      class="modal fade contact_modal"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <img src="./images/closeiconb.svg" alt="" />
+          </button>
+
+          <div class="modal-body">
+            <h3>
+              Get in Touch
+            </h3>
+            <form action="" class="contacts_form">
+              <input placeholder="Name" type="text" />
+              <input placeholder="Email (Required)" type="email" required />
+              <textarea name="" id="" placeholder="Message"></textarea>
+              <div class="file_upload_wrap">
+                <label for="file_choose" class="file_upload">
+                  <img src="./images/sc.svg" alt="" />
+                  <span>
+                    Attach file
+                  </span>
+                </label>
+                <div
+                  class="fileupload fileupload-new"
+                  data-provides="fileupload"
+                >
+                  <!-- <label for="file_choose"></label> -->
+                  <span class="btn btn-primary btn-file">
+                    <input id="file_choose" type="file"
+                  /></span>
+                  <span class="fileupload-preview"></span>
+                  <a
+                    href="#"
+                    class="close fileupload-exists"
+                    data-dismiss="fileupload"
+                    style="float: none"
+                  ></a>
+                </div>
+              </div>
+              <button type="submit" class="main_btn">
+                <span>
+                  Send
+                </span>
+
+                <img src="./images/Arrow.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="blog_open temp_open temp">
       <div class="container">
         <div class="page_path">

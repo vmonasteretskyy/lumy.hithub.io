@@ -108,6 +108,8 @@ button { cursor: pointer; outline: none !important; }
 
 textarea { resize: none; }
 
+button { font-size: unset; }
+
 .cond { font-family: "Roboto Condensed", sans-serif; }
 
 .just_center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; display: -webkit-flex; display: -ms-flexbox; display: flex; }
@@ -374,6 +376,14 @@ footer li svg { margin-right: 20px; }
 
 .menu ul { margin-right: -70px; }
 
+footer li:hover, .contacts_list li:hover { color: #02d2b6; }
+
+footer li:hover span, .contacts_list li:hover span { color: #02d2b6; }
+
+footer li:hover path, .contacts_list li:hover path { fill: #02d2b6; }
+
+.tag:hover { color: #02d2b6; }
+
 .header { position: static; background-color: #fdfdfd; border-bottom: 1px solid #e5e5e5; }
 
 .header .menu a { color: #1b1b1b; }
@@ -480,7 +490,7 @@ nav .pagination { margin-top: 80px; }
 
 .slider_main_img:hover .cover_slide { z-index: 99; opacity: 1; }
 
-.slider_sm { margin-top: -23px; height: 100%; }
+.slider_sm { margin-top: -24px; height: 100%; }
 
 .not_found { display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; height: calc(100vh - 431px); width: 100%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -529,6 +539,16 @@ nav .pagination { margin-top: 80px; }
 .contact_modal .close :focus { outline: none; }
 
 .menu ul .main_btn { display: none; height: 50px; color: #fdfdfd; }
+
+.temp_open_buttons a, .btn_pag a { transition: all 0.2s; }
+
+.temp_open_buttons a:hover, .btn_pag a:hover { color: #02d2b6; font-weight: bold; }
+
+.page-item:not(.btn_pag):hover .page-link { background-color: #02d2b6; color: #fdfdfd; border-radius: 50%; }
+
+.btn_pag a { color: #02d2b6; }
+
+h3:hover a { color: #02d2b6; }
 
 @media (min-width: 1580px) { .container { max-width: 1477px; } }
 

@@ -18,6 +18,9 @@ button {
 textarea {
   resize: none;
 }
+button {
+  font-size: unset;
+}
 .cond {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -779,4 +782,19 @@ footer {
 }
 .menu ul {
   margin-right: -70px;
+}
+footer,
+.contacts_list {
+  li:hover {
+    color: #02d2b6;
+    span {
+      color: #02d2b6;
+    }
+    path {
+      fill: #02d2b6;
+    }
+  }
+}
+.tag:hover {
+  color: #02d2b6;
 }
