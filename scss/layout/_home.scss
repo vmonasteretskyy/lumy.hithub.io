@@ -207,9 +207,12 @@ header {
 // SECOND VIEW
 .second_view {
   background-color: #1b1b1b;
-  padding-top: 70px;
+  padding-top: 47px;
   padding-bottom: 60px;
   color: rgba(253, 253, 253, 0.8);
+  h2 {
+    margin-bottom: 60px;
+  }
 }
 
 .we_have__block {
@@ -797,4 +800,17 @@ footer,
 }
 .tag:hover {
   color: #02d2b6;
+}
+.line_down {
+  background-image: url("../images/Arrow3.svg");
+  width: 20px;
+  background-color: transparent;
+  background-size: cover;
+  background-position-y: bottom;
+}
+.second_view {
+  h2 {
+    color: #fbfbfb;
+    text-align: center;
+  }
 }

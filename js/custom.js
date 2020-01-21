@@ -37,8 +37,6 @@ $(document).ready(function() {
       var windowHeight = $(window).height();
       var secondView = $("#second_view").outerHeight();
 
-      windowHeight = windowHeight + secondView - 90;
-
       if (scrolled > windowHeight) {
         $("header").css({ background: "#fdfdfd" });
         $(".menu a").css({ color: "#1b1b1b" });

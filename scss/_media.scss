@@ -134,6 +134,9 @@
   }
 }
 @media (max-width: 991.9px) {
+  header {
+    font-size: 20px;
+  }
   .menu ul {
     margin-right: 0;
   }
@@ -412,6 +415,9 @@
   }
 }
 @media (max-width: 575.9px) {
+  header ul li:not(:last-child) {
+    margin-bottom: 40px;
+  }
   .contacts_form textarea {
     height: 140px;
   }
