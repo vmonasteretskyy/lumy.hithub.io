@@ -52,14 +52,15 @@ section {
   transition: all 0.3s;
   span {
     font-family: "Roboto Condensed", sans-serif;
-    margin-right: 10px;
+    margin-right: 15px;
     transition: all 0.3s;
   }
 }
 .main_btn:hover {
   box-shadow: 0px 2px 30px rgba(2, 210, 182, 0.7);
   span {
-    margin-right: 5px;
+    margin-left: -5px;
+    margin-right: 10px;
   }
 }
 
@@ -134,20 +135,34 @@ section {
 .line_down {
   background-color: #fbfbfb;
   width: 1px;
-  animation: pulsate 2.5s infinite linear;
-  height: 2px;
   margin: 0 auto;
+  height: 30px;
+  position: absolute;
+  &_1 {
+    top: 0px;
+    animation: pulsate1 1s infinite linear;
+  }
+  &_2 {
+    top: 20px;
+    animation: pulsate1 1s infinite linear;
+    animation-delay: 0.3s;
+  }
+  &_3 {
+    top: 40px;
+    animation: pulsate1 1s infinite linear;
+    animation-delay: 0.7s;
+  }
 }
 
-@keyframes pulsate {
+@keyframes pulsate1 {
   0% {
-    height: 2px;
+    opacity: 1;
   }
   50% {
-    height: 9.3vh;
+    opacity: 0.5;
   }
   100% {
-    height: 2px;
+    opacity: 0.1;
   }
 }
 
@@ -524,7 +539,8 @@ h3 {
   &:hover {
     box-shadow: 0px 2px 30px rgba(2, 210, 182, 0.3);
     span {
-      margin-right: 5px;
+      margin-left: -5px;
+      margin-right: 10px;
     }
   }
   span {
@@ -532,7 +548,7 @@ h3 {
     line-height: 20px;
     color: #02d2b6;
     font-family: "Roboto Condensed", sans-serif;
-    margin-right: 10px;
+    margin-right: 15px;
     transition: all 0.3s;
   }
 }
@@ -803,7 +819,7 @@ footer,
 }
 .line_down {
   background-image: url("../images/Arrow3.svg");
-  width: 20px;
+  width: 30px;
   background-color: transparent;
   background-size: cover;
   background-position-y: bottom;
